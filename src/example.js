@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
-import Alert from 'react-bootstrap/Alert';
+import React, { Component,Fragment } from 'react'
+import { Navbar,NavItem,NavDropdown,MenuItem,Nav,Form,FormControl,Button,} from "react-bootstrap";
 
-function Example() {
-    return (
-        <Alert dismissible variant="danger">
-            <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-            <p>
-                Change this and that and try again.
-      </p>
-        </Alert>
-    )
+class Example extends Component {
+    render() {
+        return (
+         <h1> s</h1>   
+      );
+    }
 }
 
 export default Example;

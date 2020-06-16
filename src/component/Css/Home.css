@@ -1,0 +1,33 @@
+.defaultintro {
+  min-height: calc(100vh);
+  height: 100%;
+  background: transparent url(/image/garden-3.jpg) center/cover fixed;
+  background-attachment: fixed;
+}
+
+.ht {
+  margin-bottom: -30px;
+}
+
+.banner {
+  background: transparent url(/image/sunset.jpg) no-repeat;
+  align-items: flex-end;
+  background-size: cover;
+  height: 30vh;
+}
+.k {
+  size: inherit;
+  padding-top: 0%;
+}
+#img1 {
+  width: auto;
+  height: 525px;
+  max-height: 575px;
+  margin: auto;
+  display: block;
+}
+
+.exp1 {
+  border: 2px black solid;
+  height: 90vh;
+}

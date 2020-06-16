@@ -1,28 +1,26 @@
-import React, { Fragment } from 'react'
-import Example from './example.js';
-import './App.css';
+import React from "react";
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "./App.css";
+//import Carosel from "./component/Layout/Carosel";
+import Home from "./component/Pages/Home";
+import About from "./component/Pages/About";
+import Family from "./component/Pages/Family";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 const App = () => {
   return (
-    
-    <div className="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-      <div className="btn-group mr-2" role="group" aria-label="First group">
-        <button type="button" className="btn btn-secondary">1</button>
-        <button type="button" className="btn btn-secondary">2</button>
-        <button type="button" className="btn btn-secondary">3</button>
-        <button type="button" className="btn btn-secondary">4</button>
-      </div>
-      <div className="btn-group mr-2" role="group" aria-label="Second group">
-        <button type="button" className="btn btn-secondary">5</button>
-        <button type="button" className="btn btn-secondary">6</button>
-        <button type="button" className="btn btn-secondary">7</button>
-      </div>
-      <div className="btn-group" role="group" aria-label="Third group">
-        <button type="button" className="btn btn-secondary">8</button>
-      </div>
-    </div>
-    
+    <Router>
+      <>
+        {/* {<img src="/image/sunset.jpg" id="nvbg" alt="top-img" />}
+        <Navigation /> */}
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Family" component={Family} />
+          <Route exact path="/About" component={About} />
+        </Switch>
+      </>
+    </Router>
   );
-}
+};
 
 export default App;
