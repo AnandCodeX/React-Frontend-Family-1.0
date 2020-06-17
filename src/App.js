@@ -6,13 +6,14 @@ import Home from "./component/Pages/Home";
 import About from "./component/Pages/About";
 import Family from "./component/Pages/Family";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-const App = () => {
+import Navigation from "./component/Layout/Navbar";
+const App = (props) => {
   return (
     <Router>
       <>
         {/* {<img src="/image/sunset.jpg" id="nvbg" alt="top-img" />}
         <Navigation /> */}
+        {/* <Navigation changePosition="0" home="100"/> */}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Family" component={Family} />

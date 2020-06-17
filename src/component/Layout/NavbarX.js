@@ -1,36 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+/* import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import useWindowScrollPosition from "@rehooks/window-scroll-position";
+import { Link } from "react-router-dom";
 import "../Css/Navbar.css";
 
-const Navigation = (props) => {
-  const [change, setChange] = useState(false);
-
-  let { changePosition } = props;
-  
-
-  
-
-  let position = useWindowScrollPosition();
-
-  // position == { x: 0, y: 0 }
-
-  if (position.y >= changePosition && !change) {
-    setChange(true);
-  }
-
-  if (position.y < changePosition && change) {
-    setChange(false);
-  }
-
-  let style = {
-    background: change
-      ? "linear-gradient(to left,#1a0d00,#e65c00)"
-      : "transparent",
-    height: "30px",
-  };
-
+const NavbarX = () => {
   return (
     <>
       <Navbar
@@ -39,10 +12,8 @@ const Navigation = (props) => {
         sticky="top"
         expand="md"
         padding-top="10px"
-        style={style}
+        backgroundColor="linear-gradient(to left,#1a0d00,#e65c00)"
       >
-
-
         <Navbar.Brand href="#home">
           <img
             src="\image\logo.jpg"
@@ -72,4 +43,5 @@ const Navigation = (props) => {
   );
 };
 
-export default Navigation;
+export default NavbarX;
+ */

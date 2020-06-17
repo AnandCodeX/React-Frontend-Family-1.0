@@ -2,13 +2,14 @@ import React from "react";
 import Navigation from "../Layout/Navbar";
 
 const Family = () => {
+  
   return (
     <>
-      <Navigation style={{ bagroundcolor: "black" }} />
+      <Navigation changePosition="0"/>
 
       <div className="py4 ml-5 mr-5">
         <h1>Family Page</h1>
-        <p >
+        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
           distinctio a perspiciatis error aliquam ullam dignissimos fugit at
           blanditiis, aut asperiores. Fuga praesentium iste est libero ipsam

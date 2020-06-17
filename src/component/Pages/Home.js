@@ -9,7 +9,7 @@ const Home = () => {
       <Intro intro="defaultintro">
         <div className="container-fluid banner img-fluid ht"></div>
         
-        {<Navigation className="k flex-end" />}
+        {<Navigation className="k flex-end" changePosition="100"/>}
         <h5>
           <p className="text-center mt-lg-2" style={{ color: "white" }}>
             kkaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
