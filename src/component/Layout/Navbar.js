@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, EventHandler } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
@@ -6,11 +6,22 @@ import "../Css/Navbar.css";
 
 const Navigation = (props) => {
   const [change, setChange] = useState(false);
+  const [name, setName] = useState(100);
 
-  let { changePosition } = props;
-  
+  const handler = (event) => {
+    if (changePosition == 0) {
+      return setName(100);
+    }
+  };
+  const handlerf = () => {
+    return setName(0);
+  };
+  const handlera = () => {
+    return setName(0);
+  };
 
-  
+  const changePosition = name;
+  console.log(changePosition);
 
   let position = useWindowScrollPosition();
 
@@ -41,8 +52,6 @@ const Navigation = (props) => {
         padding-top="10px"
         style={style}
       >
-
-
         <Navbar.Brand href="#home">
           <img
             src="\image\logo.jpg"
@@ -56,13 +65,13 @@ const Navigation = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav border-dark">
           <Nav className="ml-auto " variant="pills">
-            <Link className="nav-link" id="home" to="/">
+            <Link className="nav-link" onClick={handler} id="home" to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/Family">
+            <Link className="nav-link" onClick={handlerf} to="/Family">
               Family
             </Link>
-            <Link className="nav-link" to="/About">
+            <Link className="nav-link" onClick={handlera} to="/About">
               About
             </Link>
           </Nav>

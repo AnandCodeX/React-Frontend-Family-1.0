@@ -2,10 +2,9 @@ import React from "react";
 import Navigation from "../Layout/Navbar";
 
 const Family = () => {
-  
   return (
     <>
-      <Navigation changePosition="0"/>
+      {/* <Navigation changePosition="0"/> */}
 
       <div className="py4 ml-5 mr-5">
         <h1>Family Page</h1>

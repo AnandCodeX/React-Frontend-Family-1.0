@@ -13,7 +13,7 @@ const App = (props) => {
       <>
         {/* {<img src="/image/sunset.jpg" id="nvbg" alt="top-img" />}
         <Navigation /> */}
-        {/* <Navigation changePosition="0" home="100"/> */}
+        <Navigation/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Family" component={Family} />
